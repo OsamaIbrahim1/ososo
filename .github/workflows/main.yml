@@ -23,5 +23,5 @@ jobs:
       - name: "Pushing to Docker hub"
         run: docker push ${{ secrets.DOCKER_USERNAME}}/myimage
 
-      - name: "Local Tunnel"
+      - name: "Local Tunnel project"
         run: lt --port 8000
